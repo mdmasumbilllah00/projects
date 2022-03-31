@@ -1,0 +1,86 @@
+h2 {
+    color: rgb(151, 139, 139);
+    margin: 50px 0px 10px 0px;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+#baner-section {
+    height: 500px;
+    width: 100%;
+    background-color: aqua;
+}
+
+.carosol-img {
+    width: 450px;
+}
+
+.carosol-img img {
+    width: 80%;
+}
+
+.catagori {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border: 1px solid rgb(231, 231, 231);
+    height: 180px;
+}
+
+.catagori:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.fluide-image-parent {
+    height: 70%;
+}
+
+.fluide-image-parent img {
+    height: 100%;
+    border-radius: 10px;
+
+}
+
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+
+.products {
+    max-width: 80%;
+}
+
+.prize {
+    font-size: large;
+    font-weight: 700;
+    color: rgb(255, 153, 0);
+    display: block;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating-num {
+    display: flex;
+    font-size: 10px;
+
+}
+
+.rating-star i {
+    color: rgb(255, 167, 3);
+}
+
+
+
+@media only screen and (max-width:668px) {
+
+    .products {
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}

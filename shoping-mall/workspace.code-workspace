@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "images\\womens\\woman-shoes"
+		},
+		{
+			"path": "images\\womens\\womens-bag"
+		},
+		{
+			"path": "images\\womens\\womens-clothing"
+		},
+		{
+			"path": "images\\womens\\womens-jewellery"
+		},
+		{
+			"path": "images\\womens\\ladis-watch"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "woman-shoes"
+	}
+}
