@@ -1,9 +1,14 @@
 var catagoris = document.getElementsByClassName("catagori");
 catagoris[0].addEventListener("click", function () {
-    alert("mobile")
+    var x = document.getElementById("mobile").innerHTML;
+    document.getElementById("display").innerHTML = x;
+    document.getElementById("second-display").style.display = "none";
+
 });
 catagoris[1].addEventListener("click", function () {
-    alert("laptop")
+    var x = document.getElementById("laptop").innerHTML;
+    document.getElementById("display").innerHTML = x;
+    document.getElementById("second-display").style.display = "none";
 });
 catagoris[2].addEventListener("click", function () {
     alert("shirt")
