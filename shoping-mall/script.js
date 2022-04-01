@@ -94,7 +94,7 @@ catagoris[6].addEventListener("click", function () {
     var Products = document.getElementsByClassName("products");
     var dis = document.getElementById("display");
     var number = Math.round(Math.random() * 20)
-    for (var i = 0; i < Products.length; i += 8) {
+    for (var i = number; i < Products.length; i += 8) {
         dis.innerHTML += Products[i].innerHTML;
     }
     var atr = document.getElementById("display").attributes.getNamedItem("class");
