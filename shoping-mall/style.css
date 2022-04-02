@@ -75,6 +75,64 @@ section {
 
 
 
+.catagoris-list {
+    width: 200px;
+}
+
+.dropdown-list ul {
+    list-style-type: none;
+}
+
+.dropdown-list li {
+    padding: 3px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-list li>i {
+    color: #54e0fca4;
+    display: none;
+}
+
+.dropdown-list li:hover {
+    background-color: rgb(242, 242, 242);
+}
+
+.dropdown-list li:hover>a {
+    color: #54e0fc;
+}
+
+.dropdown-list li:hover>i {
+    display: block;
+}
+
+.dropdown-list li>a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.542);
+    font-size: .8em;
+}
+
+.dropdown-list ul li>ul {
+    position: absolute;
+    background-color: rgb(253, 254, 255);
+    left: 200px;
+    top: 0px;
+    display: none;
+    padding: 0;
+    width: 200px;
+    height: 125%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 2s;
+}
+
+.dropdown-list ul li:hover>ul {
+    display: block;
+    z-index: 10;
+
+}
+
+
 @media only screen and (max-width:668px) {
 
     .products {

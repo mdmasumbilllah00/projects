@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+</head>
+
+<body>
+
+    <ul>
+        <li><a id="manL" href="#">man</a>
+            <ul>
+                <li><a id="shirtL" href="#">shirt</a></li>
+                <li><a id="pantL" href="#">pant</a></li>
+            </ul>
+        </li>
+
+
+        <li><a id="womanL" href="#">woman</a>
+            <ul>
+                <li><a id="jamaL" href="#">jama</a></li>
+                <li><a id="ornaL" href="#">orna</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div id="display">
+
+    </div>
+    <div id="man">
+        <div id="shirt">
+            <div class="product">
+                <h1>shirt-1</h1>
+                <h1>shirt-2</h1>
+                <h1>shirt-3</h1>
+            </div>
+        </div>
+        <div id="pant">
+            <div class="product">
+                <h1>pant-1</h1>
+                <h1>pant-2</h1>
+                <h1>pant-3</h1>
+            </div>
+        </div>
+    </div>
+    <div id="woman">
+        <div id="jama">
+            <div class="product">
+                <h1>jama-1</h1>
+                <h1>jama-2</h1>
+                <h1>jama-3</h1>
+            </div>
+        </div>
+        <div id="orna">
+            <div class="product">
+                <h1>orna-1</h1>
+                <h1>orna-2</h1>
+                <h1>orna-3</h1>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var x = document.getElementsByTagName("a");
+        for (var sec of x) {
+            sec.addEventListener("click", function () {
+                document.getElementById("display").innerHTML = "";
+                var atr = this.attributes.getNamedItem("id").value;
+                atr = atr.slice(0, atr.length - 1);
+                var x = document.getElementById(atr);
+                var Products = x.getElementsByClassName("product");
+                var dis = document.getElementById("display");
+                for (var product of Products) {
+                    dis.innerHTML += product.innerHTML;
+                }
+
+            })
+        }
+    </script>
+</body>
+
+</html>

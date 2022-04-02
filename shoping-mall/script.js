@@ -74,7 +74,7 @@ catagoris[4].addEventListener("click", function () {
 
 });
 catagoris[5].addEventListener("click", function () {
-    document.getElementById("display").innerHTML = ""
+    document.getElementById("display").innerHTML = "";
     var x = document.getElementById("home-application");
     var Products = x.getElementsByClassName("products");
     var dis = document.getElementById("display");
@@ -102,3 +102,57 @@ catagoris[6].addEventListener("click", function () {
     document.getElementById("second-display").style.display = "none";
 
 });
+
+var x = document.getElementById("droupdown-list");
+var links = x.getElementsByTagName("a");
+for (var link of links) {
+    link.addEventListener("click", function () {
+        document.getElementById("display").innerHTML = "";
+        var atr = this.attributes.getNamedItem("id").value;
+        atr = atr.slice(0, atr.length - 1);
+        var x = document.getElementById(atr);
+        var Products = x.getElementsByClassName("products");
+        var dis = document.getElementById("display");
+        for (var product of Products) {
+            product.style.maxWidth = "80%";
+            product.style.margin = "5px";
+
+            dis.innerHTML += product.innerHTML;
+        }
+
+        document.getElementById("second-display").style.display = "none";
+
+    })
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// for (var link of links) {
+//     link.addEventListener("click", function () {
+//         document.getElementById("display").innerHTML = ""
+//         var atr = this.attributes.getNamedItem("id").value;
+//         atr = atr.slice(0, atr.length - 1);
+//         var x = document.getElementById(atr);
+//         alert(x.attributes.getNamedItem("id").value)
+        // var products = x.getElementsByClassName("products");
+        // var dis = document.getElementById("display");
+        // for (var product of products) {
+        //     product.style.maxWidth = "80%";
+        //     product.style.margin = "5px";
+
+        //     dis.innerHTML += product.innerHTML;
+        // }
+        // document.getElementById("second-display").style.display = "none";
+
+//     })
+// }
